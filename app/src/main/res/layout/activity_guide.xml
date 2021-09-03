@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".GuideActivity">
+    <TextView
+        android:id="@+id/howTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/orienta"
+        android:padding="4dp"
+        android:text="How to use."
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/viewHow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <View
+        android:id="@+id/viewHow"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_margin="10dp"
+        android:background="#50C0C0C0"
+        app:layout_constraintTop_toBottomOf="@id/howTxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <ImageButton
+        android:id="@+id/closeHow"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button_click"
+        android:src="@drawable/close"
+        android:scaleType="fitCenter"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ScrollView
+        android:id="@+id/scrollHow"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scrollbars="vertical"
+        android:fadingEdge="vertical"
+        android:fillViewport="true"
+        android:overScrollMode="ifContentScrolls"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/viewHow">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Addition :\n+"
+                    android:layout_margin="5dp"
+                    android:textSize="20sp"
+                    android:textColor="@color/orange"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="100dp"
+                    android:text="Example: 4+5"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Subtraction :\n-"
+                    android:layout_margin="5dp"
+                    android:textSize="20sp"
+                    android:textColor="@color/orange"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="100dp"
+                    android:text="Example: 4-5"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Multiplication :\n×"
+                    android:layout_margin="5dp"
+                    android:textSize="20sp"
+                    android:textColor="@color/orange"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="100dp"
+                    android:text="Example: 4×5"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Division :\n÷"
+                    android:layout_margin="5dp"
+                    android:textSize="20sp"
+                    android:textColor="@color/orange"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="100dp"
+                    android:text="Example: 4÷5"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Modulus :\n%"
+                    android:layout_margin="5dp"
+                    android:textSize="20sp"
+                    android:textColor="@color/orange"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="100dp"
+                    android:text="Example: 4%5"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Float :\n."
+                    android:layout_margin="5dp"
+                    android:textSize="20sp"
+                    android:textColor="@color/orange"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="100dp"
+                    android:text="Example: 4.5"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Result :\n="
+                    android:layout_margin="5dp"
+                    android:textSize="20sp"
+                    android:textColor="@color/orange"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="100dp"
+                    android:text="Example: 4+5 gives = 9"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Clear :  AC"
+                    android:layout_margin="5dp"
+                    android:textSize="20sp"
+                    android:textColor="@color/orange"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="100dp"
+                    android:text="Clear the result and expression."
+                    android:textSize="15sp"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Backspace :  "
+                    android:drawableEnd="@drawable/backspace"
+                    android:textSize="20sp"
+                    android:textColor="@color/orange"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="100dp"
+                    android:text="Clears the last entered character."
+                    android:textSize="15sp"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
